@@ -81,4 +81,16 @@ public class Employee {
         System.out.println("Employee " + name + " clocked out at " + endTime);
         this.hoursWorked += hours; // Update total hours worked
     }
+
+    public void punchIn() {
+        boolean isClockedIn = true;
+        LocalDateTime startTime = LocalDateTime.now();
+        System.out.println("Employee " + name + " clocked in at " + startTime);
+    }
+
+    public void punchOut() {
+        boolean isClockedIn = false;
+        LocalDateTime endTime = LocalDateTime.now();
+        System.out.println("Employee " + name + " clocked out at " + endTime);
+    }
 }
