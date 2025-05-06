@@ -1,5 +1,7 @@
 package org.example;
 
+import java.time.LocalDateTime;
+
 public class Employee {
     private int employeeId;
     private String name;
@@ -62,8 +64,21 @@ public class Employee {
     public double getRegularHours() {
         return Math.min(hoursWorked, 40);
     }
-    
+
     public double getOvertimeHours() {
         return Math.max(0, hoursWorked - 40);
+    }
+
+    public void punchIn(double hours) {
+        boolean isClockedIn = true;
+        LocalDateTime startTime = LocalDateTime.now();
+        System.out.println("Employee " + name + " clocked in at " + startTime);
+    }
+
+    public void punchOut(double hours) {
+        boolean isClockedIn = false;
+        LocalDateTime endTime = LocalDateTime.now();
+        System.out.println("Employee " + name + " clocked out at " + endTime);
+        this.hoursWorked += hours; // Update total hours worked
     }
 }
