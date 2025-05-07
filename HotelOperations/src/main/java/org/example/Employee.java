@@ -93,4 +93,12 @@ public class Employee {
         LocalDateTime endTime = LocalDateTime.now();
         System.out.println("Employee " + name + " clocked out at " + endTime);
     }
+
+    public LocalDateTime getPunchInTime() {
+        return LocalDateTime.now();
+    }
+
+    public LocalDateTime getPunchOutTime() {
+        return LocalDateTime.now();
+    }
 }
