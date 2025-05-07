@@ -58,7 +58,7 @@ public class Hotel {
         int availableRooms = numberOfRooms - (bookedBasicRooms + bookedSuites);
         System.out.printf("Available Rooms: %d%n", availableRooms);
     }
-    
+
 }
 
 
