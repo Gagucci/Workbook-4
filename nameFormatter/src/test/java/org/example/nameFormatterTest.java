@@ -27,6 +27,15 @@ class nameFormatterTest {
 
     @org.junit.jupiter.api.Test
     void testFormat1() {
-
+        // arrange
+        String prefix = "Mr.";
+        String firstName = "John";
+        String middleName = "A.";
+        String lastName = "Doe";
+        String suffix = "PhD";
+        // act
+        nameFormatter.format("Doe", "Mr.", "John", "A.", "PhD");
+        // assert
+        assertEquals("Doe, Mr. John A. , PhD", nameFormatter.format(lastName, prefix, firstName, middleName, suffix), "Full name with prefix and suffix should be formatted correctly");
     }
 }
