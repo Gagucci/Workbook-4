@@ -13,91 +13,109 @@ public class Vehicle {
     private int odometer;
     private boolean isElectric;
 
-    public String typeOfVehicle() {
+    public String getTypeOfVehicle() {
         return typeOfVehicle;
     }
 
-    public void setTypeOfVehicle(String typeOfVehicle) {
-        this.typeOfVehicle = typeOfVehicle;
-    }
-
-    public String vehicleMake() {
+    public String getVehicleMake() {
         return vehicleMake;
     }
 
-    public void setVehicleMake(String vehicleMake) {
-        this.vehicleMake = vehicleMake;
-    }
-
-    public String vehicleModel() {
+    public String getVehicleModel() {
         return vehicleModel;
     }
 
-    public void setVehicleModel(String vehicleModel) {
-        this.vehicleModel = vehicleModel;
-    }
-
-    public int passengerCount() {
+    public int getPassengerCount() {
         return passengerCount;
     }
 
-    public void setPassengerCount(int passengerCount) {
-        this.passengerCount = passengerCount;
-    }
-
-    public int cargoCapacity() {
+    public int getCargoCapacity() {
         return cargoCapacity;
     }
 
-    public void setCargoCapacity(int cargoCapacity) {
-        this.cargoCapacity = cargoCapacity;
-    }
-
-    public int fuelCapacity() {
+    public int getFuelCapacity() {
         return fuelCapacity;
     }
 
-    public void setFuelCapacity(int fuelCapacity) {
-        this.fuelCapacity = fuelCapacity;
-    }
-
-    public int travelRange() {
+    public int getTravelRange() {
         return travelRange;
     }
 
-    public void setTravelRange(int travelRange) {
-        this.travelRange = travelRange;
-    }
-
-    public int vehicleYearMade() {
+    public int getVehicleYearMade() {
         return vehicleYearMade;
     }
 
-    public void setVehicleYearMade(int vehicleYearMade) {
-        this.vehicleYearMade = vehicleYearMade;
-    }
-
-    public String vehicleID() {
+    public String getVehicleID() {
         return vehicleID;
     }
 
-    public void setVehicleID(String vehicleID) {
-        this.vehicleID = vehicleID;
-    }
-
-    public int odometer() {
+    public int getOdometer() {
         return odometer;
-    }
-
-    public void setOdometer(int odometer) {
-        this.odometer = odometer;
     }
 
     public boolean isElectric() {
         return isElectric;
     }
 
+    public void setTypeOfVehicle(String typeOfVehicle) {
+        this.typeOfVehicle = typeOfVehicle;
+    }
+
+    public void setVehicleMake(String vehicleMake) {
+        this.vehicleMake = vehicleMake;
+    }
+
+    public void setVehicleModel(String vehicleModel) {
+        this.vehicleModel = vehicleModel;
+    }
+
+    public void setPassengerCount(int passengerCount) {
+        this.passengerCount = passengerCount;
+    }
+
+    public void setCargoCapacity(int cargoCapacity) {
+        this.cargoCapacity = cargoCapacity;
+    }
+
+    public void setFuelCapacity(int fuelCapacity) {
+        this.fuelCapacity = fuelCapacity;
+    }
+
+    public void setTravelRange(int travelRange) {
+        this.travelRange = travelRange;
+    }
+
+    public void setVehicleYearMade(int vehicleYearMade) {
+        this.vehicleYearMade = vehicleYearMade;
+    }
+
+    public void setVehicleID(String vehicleID) {
+        this.vehicleID = vehicleID;
+    }
+
+    public void setOdometer(int odometer) {
+        this.odometer = odometer;
+    }
+
     public void setElectric(boolean electric) {
         isElectric = electric;
+    }
+
+    public Vehicle(String typeOfVehicle, String vehicleMake, String vehicleModel, int passengerCount, int cargoCapacity, int fuelCapacity, int travelRange, int vehicleYearMade, String vehicleId, int odometer, boolean isElectric) {
+        this.typeOfVehicle = typeOfVehicle;
+        this.vehicleMake = vehicleMake;
+        this.vehicleModel = vehicleModel;
+        this.passengerCount = passengerCount;
+        this.cargoCapacity = cargoCapacity;
+        this.fuelCapacity = fuelCapacity;
+        this.travelRange = travelRange;
+        this.vehicleYearMade = vehicleYearMade;
+        this.vehicleID = vehicleId;
+        this.odometer = odometer;
+        this.isElectric = isElectric;
+    }
+
+    public Vehicle() {
+
     }
 }
